@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcolo degli integrali definiti</title>
+  </head>
+  <body>
+    <h1>Calcolo degli integrali definiti</h1>
+    
+    <a href='/caption'> Sintassi delle funzioni </a>
+
+    <form method=get action="/definite_integrals">
+
+      <label for="fx">f(x)</label>
+      <input name="fx" id="fx" type=text value={{fx}} />
+
+      <label for="a">a</label>
+      <input name="a" id="a" type=number value={{a}} />
+
+      <label for="b">b</label>
+      <input name="b" type=number value={{b}} />
+
+      <input type=submit value="Calcola">
+    </form>
+
+    <img src="/definite_integrals/fx={{fx}}&a={{a}}&b={{b}}.svg"
+         alt="caricamento grafico..."
+         height="500"
+    >
+  </body>
+</html>
