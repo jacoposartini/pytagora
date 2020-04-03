@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcolo di equazioni</title>
+  </head>
+  <body>
+    <h1>Calcolo delle equazioni</h1>
+    
+    <a href='/caption'> Sintassi delle funzioni </a>
+
+    <form method=get action="/equations">
+
+      <input name="f" id="f" type=text value={{f}} />
+
+      <select>
+          <option>
+              =
+          </option>
+      </select>
+      <input name="g" id="g" type=text value={{g}} />
+
+
+      <input type=submit value="Calcola">
+    </form>
+
+    <img src="/equations/f={{f}}&g={{g}}.svg"
+         alt="caricamento grafico..."
+         height="500"
+    >
+  </body>
+</html>
